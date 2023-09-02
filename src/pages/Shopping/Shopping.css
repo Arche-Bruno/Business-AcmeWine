@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+.container-shopping{
+  font-family: 'Cinzel Decorative', cursive;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Four columns in each row */
+  gap: 2rem; /* Gap between cards */
+}
+
+
+@media only screen and (max-width:750px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Four columns in each row */
+    gap: 2rem; /* Gap between cards */
+  }
+  
+}
+ /* Shopping.css */
+
+/* Shopping.css */
+

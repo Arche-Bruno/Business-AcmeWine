@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
+.nav{
+  position: fixed;
+  font-family: 'Cinzel Decorative', cursive;
+   font-weight: 900;
+  
+}
+
+.menu-ico{
+  background-color: aliceblue;
+  padding: 4px;
+  border-radius: 5px ;
+}
+/*Style for the icon  */
+/*Style for Badge*/
+.custom-badge {
+  /* Tus estilos normales de Badge */
+  background-color: #3F3F46;
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.nav-link:hover{
+  color: #a6a6b3;
+}
+.badge-increase {
+  animation: badgeIncreaseAnimation 0.5s ease-in-out;
+}
+
+@keyframes badgeIncreaseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/**/
+.avatar {
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Element in it´s original position */
+    }
+    50% {
+      transform: translateY(-5px); /* Element moved upwards*/
+    }
+  }
+
+/*End*/
+
+
+@media only screen and (max-width:750px){
+  .Nav-name-logo {
+    display: none;
+ 
+  }
+ 
+}

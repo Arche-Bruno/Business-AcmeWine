@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container-app{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #121212;
+ 
+}
+.containerDefault{
+  height: 100vh;
+}
+
+.app-img-major{
+  
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+ 
+ 
+}  
+.app-hr{
+  
+  border-color:#3F3F46 ;
+}
+.app-img-major img{
+ 
+  width: 100%;
+  display: block;
+ 
+
+}
+.app-img-secondary{
+  position: absolute;
+  display: flex; /* Utilizamos flexbox para el diseño */
+  align-items: flex-end; /* Alinea los elementos en la parte superior */
+  width: 100px;
+  gap: 2rem;
+  bottom:-3rem;
+  left: 6rem;
+  border: 2px solid #3F3F46;
+
+}
+.img{
+ 
+  width: 100%;
+  display: block;
+}
+
+.container-navBar {
+  opacity: 0;
+  transform: translateY(-90%);
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Agrega transiciones */
+  
+}
+
+
+.container-navBar.visible {
+  position: fixed;
+  top: 20;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ajusta el valor según sea necesario */
+  opacity: 1;
+  transform: translateY(0);
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Mantén las transiciones aquí */
+}
+
+/*Styles for footer*/
+
+   /* Estilos para el footer */
+   footer {
+    border-top: 2px solid #3F3F46;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para los enlaces del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el texto de +18 años */
+.age-notice {
+    font-size: 16px;
+    margin-top: 10px;
+}
+@media only screen and (max-width:750px){
+  .app-img-secondary{
+   width: 75px;
+   gap:1rem;
+  }
+  
+}

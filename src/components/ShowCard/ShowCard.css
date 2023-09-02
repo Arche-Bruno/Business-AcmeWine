@@ -1,0 +1,83 @@
+.modal{
+    
+    position: fixed;
+    top:0;
+    right: 0;
+  
+}
+.containerShowCard{
+   
+  
+    max-width: 270px;
+    animation: bonce 2s;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.showCard-button{
+   border: 2px solid transparent;
+}
+.showCard-button:hover{
+    border: 2px solid #3F3F46 ;
+     background-color: #fff;
+     color: black;
+}
+.showCard-btn{
+    border: 2px solid transparent;
+}
+.showCard-btn:hover{
+    border:2px solid #F31260;
+    background-color: #fff;
+    color :black
+
+}
+/*.modal{
+
+ 
+}
+.containerShowCard{
+   
+
+    max-width: 270px;
+    animation: bonce 2s;
+    position: fixed;
+    top:0;
+    right: 0;
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}*/
+@keyframes bonce {
+     0%{
+      transform: translateX(150px);
+     }
+     100%{
+        transform: translateY(0);
+
+     }
+}
+@media only screen and (max-width:1325px){
+    .modal{
+        
+         background-color: rgba(0, 0, 0, 0.9);
+         width: 100vw;
+         height: 100vh;
+         display: grid;
+         place-items: center;
+    }
+    .containerShowCard{
+    
+     animation: bonce;
+     top: 10;
+ 
+    
+    }
+ 
+    
+  
+    
+    
+}
+
+

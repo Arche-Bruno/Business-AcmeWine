@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
+.container-trolley {
+  margin-top: 10rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  height: 100vh;
+  overflow-y: auto; /* Agrega desplazamiento vertical si el contenido supera la altura de la ventana */
+}
+.container-table-max{
+  width: 800px;
+  
+}
+.container-table {
+  flex-grow: 1;
+  overflow: auto;
+  max-height: 450px; /* Establece la altura máxima */
+}
+
+
+.imgTrolley{
+    display: none;
+}
+.button-trolley{
+  width: 100%;
+ border:2px solid transparent
+}
+.button-trolley:hover{
+  border:2px solid #9455D3;
+  background-color: #fff;
+  color: black;
+}
+.imgTable{
+   
+  border: 3px solid transparent;
+  width: 3.5rem;
+  border-radius:50% ;
+  overflow: hidden;
+}
+.imgTable img{
+  width: 100%;
+  display: block;
+}
+
+.imgTable:hover{
+border: 3px solid #9455D3;
+ 
+}
+
+.trolley-container-totalPrice{
+ 
+   display: flex;
+   justify-content: space-around;
+   background-color: #9455D3;
+   color: #fff;
+   font-family: 'Cinzel Decorative', cursive;
+   font-weight: 700;
+   border-radius: 2rem;
+   padding: 0.5rem;
+   width: 100%;
+}
+.trolley-container-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que la alerta esté en la parte superior */
+  color: #000;
+  
+  
+}
+
+.alert {
+  border: 1px solid #fff;
+  background-color:#9455D3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.alert h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.alert-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.alert-buttons button img {
+  width: 32px;
+  height: 32px;
+}
+
+
+@media only screen and (max-width:750px){
+  .container-table-max{
+    width: 300px;
+    
+  }
+  .imgTable{
+   
+    border: 3px solid transparent;
+
+    width: 2.5rem;
+    border-radius:50% ;
+    overflow: hidden;
+  }
+  .imgTable img{
+    width: 100%;
+    display: block;
+  }
+
+ .imgTable:hover{
+  border: 3px solid #9455D3;
+   
+
+  }
+}

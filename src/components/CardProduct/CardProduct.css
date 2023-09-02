@@ -1,0 +1,34 @@
+.text-money{
+    text-decoration-line: line-through;
+    color: #868686;
+  
+  }
+  .text-discount{
+    background-color: #fff;
+    color: #FFA53B;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .text-discount span{
+    
+    padding:0.2rem;
+  }
+ 
+  .card-product{
+    background-color: #1d1b1b;
+    cursor: pointer;
+    font-size: 12px;
+
+  }
+
+  @media only screen and (max-width:750px){
+    .card-img{
+      width: 65px;
+      height: 65px;
+    }
+    .description{
+      font-size: small;
+    }
+    
+  }
+
