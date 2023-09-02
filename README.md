@@ -1,7 +1,8 @@
 ***************** Descripción de Proyecto *****************
 
 Bienvenido a Business Acme Wine, una emocionante aplicación dedicada al mundo del vino y los licores.
-![Uploading ss.png…]()
+
+![ss](https://github.com/Arche-Bruno/Business-AcmeWine/assets/116225562/32446376-7541-4846-86e4-1d71b05dc447)
 
 [Descripción]
 Business Acme Wine es una plataforma que utiliza tecnología punta para brindar una experiencia única a los amantes del vino. Aquí te contamos algunas de sus características más destacadas:
